@@ -18,8 +18,8 @@ public class Num9 {
     // Создание метода, для возвращения суммы кубов заданных в массиве чисел.
     public static int sumOfCubes(int arr[]) {
         int res = 0;
-        for (int j = 0; j < arr.length; j++) {
-            res = arr[0] * arr[0] * arr[0] + arr[1] * arr[1] * arr[1] + arr[2] * arr[2] * arr[2];
+        for (int i = 0; i < arr.length; i++){
+            res += Math.pow(arr[i], 3);
         }
         return res;
     }
